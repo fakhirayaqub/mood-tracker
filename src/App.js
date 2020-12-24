@@ -1,18 +1,13 @@
-
-import './App.css';
-import { Button, Slider } from 'antd';
-import IconSlider from "./components/IconSlider"
-import Collapsible from "./components/Collapsible"
-
+import "./App.css";
+import Collapsible from "./components/Collapsible";
+import Header from "./components/Header"
 function App() {
   return (
     <div className="App">
-     
-      <IconSlider max={10}  />
-      <Collapsible/>
+      <Header/>
+        <Collapsible />
+      </div>
   
-      
-    </div>
   );
 }
 
