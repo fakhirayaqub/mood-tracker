@@ -1,7 +1,7 @@
 .panel{
   background-color:#e7717d;
   color: beige;
-  min-width: 170px;
+  min-width: 200px;
+  max-width: 200px;
   font-size: small;
-
 }
