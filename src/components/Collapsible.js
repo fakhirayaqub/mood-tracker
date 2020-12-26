@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Collapse } from "antd";
 import CustomIcons from "./CustomIcons";
-import "./Collapsible.css";
 
 import {
   faAngry,
@@ -22,11 +21,16 @@ export default function Collapsible() {
   const [PTSD, setPTSD] = useState(0);
   const [guilt, setGuilt] = useState(0);
   const [cryingspells, setCryingspells] = useState(0);
+  const [color, setColor] = useState("black");
 
   return (
     <Collapse className="panel" accordion>
       <Panel header="Anger">
-        <CustomIcons icon={faAngry} setValue={setAnger} />
+        <CustomIcons
+          className="custom-icons"
+          icon={faAngry}
+          setValue={setAnger}
+        />
         {anger ? (
           <p>
             {anger < 3
